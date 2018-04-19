@@ -15,28 +15,28 @@ import java.util.*;
 class  firstUniqChar
 {
     public static int firstUniqChar(String s)
-   {
+    {
         if(s.length() == 0 || s == null) return -1;
-         char[] c = s.toCharArray();
-     
-         
-         int[] freq = new int[126];
+        char[] c = s.toCharArray();
+        
+        
+        int[] freq = new int[126];
         for(int i=0;i<s.length();i++)
         {
             freq[c[i]]++;
         }
-         int index = s.length();
-            for(int j=0;j<s.length();j++)
-              if(freq[c[j]]==1)
-            {
-                int idx = s.indexOf(j);
-                index = Math.min(idx, index);
-                 return j;
-            }
-               
-                   
-      
-       return -1; 
+        int index = s.length();
+        for(int j=0;j<s.length();j++)
+            if(freq[c[j]]==1)
+        {
+            int idx = s.indexOf(j);
+            index = Math.min(idx, index);
+            return j;
+        }
+        
+        
+        
+        return -1; 
     }
     
     public static void main(String[] arg)
