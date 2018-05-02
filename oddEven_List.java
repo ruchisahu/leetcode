@@ -39,6 +39,8 @@ class oddEven_List
     public static void main(String[] arg)
     {
         ListNode evenList = ListFactory.createEvenNodeList();
+      //  ListNode evenList = ListFactory.test1();
+        
      ListNode result = oddEvenList( evenList ) ;
 Print.printListNode( result );
      
