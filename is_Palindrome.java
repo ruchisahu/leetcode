@@ -20,6 +20,8 @@ class is_Palindrome {
         else
         return false;
     }
+    
+    
    public static void main(String[] arg)
     {
         System.out.println(isPalindrome(10101000));
