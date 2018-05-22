@@ -1,0 +1,28 @@
+In order to add files in specific branch follow the below instructions :
+
+1.To create custom branch
+
+git branch branchname
+
+2.To switch into custom branch
+
+git checkout branchname
+
+3.To initialize in the custom branch
+
+git init
+
+4.To add files in the custom branch
+
+git add file name
+
+5.To commit the changes made in the custom branch
+
+git commit -m "your message"
+
+6.To make changes in your GitHub repo
+
+git push
+
+
+7.git push --set-upstream origin codereview
