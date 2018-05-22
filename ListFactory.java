@@ -89,8 +89,8 @@ public class ListFactory
  
   public static ListNode mergeKtest2()
  {
-     ListNode node1 = new ListNode( 5 );
-     ListNode node2 = new ListNode( 4);
+     ListNode node1 = new ListNode( 4 );
+     ListNode node2 = new ListNode( 5);
    
      ListNode node3 = new ListNode( 6 );
      ListNode node4 = new ListNode( 30 );
