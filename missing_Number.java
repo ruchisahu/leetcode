@@ -11,7 +11,7 @@ Example 2
 Input: [9,6,4,2,3,5,7,0,1]
 Output: 8
 */
-<<<<<<< HEAD
+
 import java.util.*;
 class  missing_Number {
     public static int missingNumber(int[] nums) 
@@ -35,21 +35,20 @@ class  missing_Number {
                 return expect;
         }
         return -1;
-=======
+
 class  missing_Number {
     public static int missingNumber(int[] nums) 
     {
         return 1;
->>>>>>> 02c1c2c0c2cd7485d12eb48062ab313a125ed0f7
+
     }
     
      public static void main(String[] arg)
     {
-<<<<<<< HEAD
+
         int[] nums={5,4,3,2,1,7};
-=======
         int[] nums={5,4,3,2,1};
->>>>>>> 02c1c2c0c2cd7485d12eb48062ab313a125ed0f7
+
         System.out.println(missingNumber(nums) );
     }
 }
