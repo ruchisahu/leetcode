@@ -22,9 +22,9 @@ class MedianOfTwo_SortedArrays
        int n=nums1.length;
         int m=nums2.length;
         int len=m+n;
-        System.out.println(len);
-        System.out.println(len/2+1);
-        System.out.println(len/2);
+     //   System.out.println(len);
+     //   System.out.println(len/2+1);
+    //    System.out.println(len/2);
         if(len%2==0)
         return  (findk(nums1, 0, nums2, 0, len/2+1) +findk(nums1, 0, nums2, 0, len/2))*0.5;
         else
@@ -32,12 +32,16 @@ class MedianOfTwo_SortedArrays
     }
     public static int findk(int a[],int s1,int b[],int s2,int k)
     {
+        System.out.println("k="+k);
         if(s1>=a.length)
             return b[s2+k-1];
         if(s2>=b.length)
             return a[s1+k-1];
         if(k==1)
+        {
+            System.out.println("k="+k);
             return Math.min(a[s1],b[s2]);
+        }
         int m1=s1+k/2-1;
         System.out.println("m1="+m1);
         int m2=s2+k/2-1;
@@ -54,8 +58,8 @@ class MedianOfTwo_SortedArrays
 
     public static void main(String[] arg)
     {
-        int[] a={1,2};
-        int[] b={3,4};
+        int[] a={1};
+        int[] b={3};
         System.out.println(findMedianSortedArrays(a,b));
     }
 }
